@@ -58,7 +58,7 @@ executors:
 
   horus-executor:
     docker:
-      - image: *HORUS_IMAGE
+      - image: *CI_MACHINE_IMAGE
         user: root
 
   delivery-executor:
