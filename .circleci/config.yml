@@ -117,8 +117,8 @@ jobs:
           command: |
             LATEST_VERSION=$(curl -s https://horus-assets.s3.amazonaws.com/version-cli-latest.txt)
             curl "https://horus-assets.s3.amazonaws.com/$LATEST_VERSION/linux_x64/horus" -o "./horus"
-            chmod +x "./horus"
-            ./horus start -p="./" -w="{\"javaScript\": \"horus-manager\"}"
+            chmod +x "./horusec"
+            ./horusec start -p="./" -w="{\"javaScript\": \"horus-manager\"}"
 
   unit_test: 
     executor: ritchie-tests-executor
